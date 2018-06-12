@@ -16,6 +16,7 @@
         self.resultLargestString = splitString.reduce((total,item)=>{
             if(item.length > total.length){
                 total ={...total,item,length:item.length}
+                console.log(total);
             }
             return total
         },{item : '',length:0});
